@@ -12,7 +12,7 @@ export default Manifest({
   icon: "assets/default_new_app_icon.png",
   functions: [GenerateAIResponse],
   workflows: [],
-  outgoingDomains: ["api.openai.com"],
+  outgoingDomains: [add the ai provider domain],
   botScopes: [
     "commands",
     "chat:write",

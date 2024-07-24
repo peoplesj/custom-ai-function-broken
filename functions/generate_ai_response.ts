@@ -9,15 +9,15 @@ export const GenerateAIResponse = DefineFunction({
   input_parameters: {
     properties: {
       context: {
-        type: Schema.types.string,
+        type: ,
         description: "Add a variable as the context information",
       },
       custom_prompt: {
-        type: Schema.slack.types.expanded_rich_text,
-        description: "AI prompt",
+        type: ,
+        description: ,
       },
     },
-    required: ["context", "custom_prompt"],
+    required: ["context", ""],
   },
   output_parameters: {
     properties: {
@@ -41,7 +41,7 @@ export default SlackFunction(
 
     try {
       OPEN_AI = new OpenAI({
-        apiKey: env.OPEN_AI_KEY,
+        apiKey: env.OPEN_AI_KEY, 
       });
     } catch (error) {
       console.error("OPEN AI API key error:", error);
@@ -53,9 +53,9 @@ export default SlackFunction(
         messages: [
           {
             "role": "system",
-            "content": customPrompt,
+            "content": add the custom prompt variable,
           },
-          { "role": "user", "content": `${context}` },
+          { "role": "user", "content": `${addTheContextVariable}` },
         ],
         model: "gpt-3.5-turbo",
       });
@@ -68,7 +68,7 @@ export default SlackFunction(
     // Specifying these variables as output will allow them to be used by the next step in the workflow
     return {
       outputs: {
-        ai_response: AIResponse,
+        ai_response: Add The AI Response Variable,
       },
     };
   },
