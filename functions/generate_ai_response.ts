@@ -3,7 +3,7 @@ import OpenAI from "openai/mod.ts";
 
 export const GenerateAIResponse = DefineFunction({
   callback_id: "ai_response",
-  title: "generate an AI response to the context data.",
+  title: "generate an AI response to the context information (OpenAI GPT 3.5-turbo)",
   description: "save the AI response as an output variable",
   source_file: "functions/generate_ai_response.ts",
   input_parameters: {
@@ -14,7 +14,7 @@ export const GenerateAIResponse = DefineFunction({
       },
       custom_prompt: {
         type: ,
-        description: ,
+        description: "Provide instructions for the AI model to perform an action using the context information.",
       },
     },
     required: ["context", ""],
