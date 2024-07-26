@@ -33,10 +33,10 @@ export const GenerateAIResponse = DefineFunction({
 export default SlackFunction(
   GenerateAIResponse,
   async ({ inputs, env }) => {
-    const context = inputs.context;
     let AIResponse = "";
     let OPEN_AI;
-    let customPrompt = inputs.custom_prompt;
+    const context = ;
+    let customPrompt = ;
     customPrompt = customPrompt[0].elements[0].elements[0].text; // extract the prompt text from the rich text object
 
     try {
