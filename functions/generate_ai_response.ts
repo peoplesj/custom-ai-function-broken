@@ -55,7 +55,7 @@ export default SlackFunction(
             "role": "system",
             "content": add the custom prompt variable,
           },
-          { "role": "user", "content": `${addTheContextVariable}` },
+          { "role": "user", "content": addTheContextVariable },
         ],
         model: "gpt-3.5-turbo",
       });
