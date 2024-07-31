@@ -7,7 +7,7 @@ import { GenerateAIResponse } from "./functions/generate_ai_response.ts";
  * https://api.slack.com/future/manifest
  */
 export default Manifest({
-  name: "custom-ai-function",
+  name: "",
   description: "Craft a custom AI function",
   icon: "assets/default_new_app_icon.png",
   functions: [GenerateAIResponse],
