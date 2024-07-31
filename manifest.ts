@@ -17,6 +17,5 @@ export default Manifest({
     "commands",
     "chat:write",
     "chat:write.public",
-    "channels:history",
   ],
 });
